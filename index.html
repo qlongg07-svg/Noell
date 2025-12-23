@@ -91,7 +91,7 @@
         bgMusic.loop = true; bgMusic.volume = 1.0;
 
         const loader = new THREE.TextureLoader();
-        const photoFiles = ['./image1.jpeg', './image2.jpeg', './image3.jpeg', './image4.jpeg', './image5.jpeg'];
+        const photoFiles = ['./image1v.jpeg', './image2v.jpeg', './image3v.jpeg', './image4v.jpeg', './image5v.jpeg'];
         const photoTextures = [];
         photoFiles.forEach((f, i) => photoTextures[i] = loader.load(f));
 
@@ -101,7 +101,7 @@
             const ctx = canvas.getContext('2d');
             const cx = 64, cy = 64;
 
-            if (type === 'gold_glow') {
+            if (type === 'gold_glow') {\
                 const grd = ctx.createRadialGradient(cx, cy, 0, cx, cy, 40);
                 grd.addColorStop(0, '#FFFFFF'); 
                 grd.addColorStop(0.2, '#FFFFE0'); 
